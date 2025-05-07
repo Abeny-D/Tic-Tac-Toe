@@ -1,0 +1,71 @@
+.cell {
+    border: 1px solid rgb(0, 0, 0);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-family: cursive;
+}
+
+.cell:hover {
+    background-color: rgb(244, 244, 244);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.one,
+.two,
+.three {
+    border-top: none;
+}
+
+.three,
+.six,
+.nine {
+    border-right: none;
+}
+
+.one,
+.four,
+.seven {
+
+    border-left: none;
+}
+
+.seven,
+.eight,
+.nine {
+
+    border-bottom: none;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    top: 2rem;
+}
+
+button {
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(67, 67, 67);
+}
